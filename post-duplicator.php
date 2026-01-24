@@ -10,6 +10,8 @@ if (!defined('ABSPATH'))
 
 add_filter('post_row_actions', 'duplicate_link', 10, 2);
 
+
+// Add Duplicate link in the existing table row
 function duplicate_link($actions, $post)
 {
     if (current_user_can('edit_posts')) {
@@ -20,6 +22,7 @@ function duplicate_link($actions, $post)
     return $actions;
 }
 
+// Handle operation for duplicating post
 add_action('admin_action_duplicate_post', 'duplicate_post');
 
 function duplicate_post()
