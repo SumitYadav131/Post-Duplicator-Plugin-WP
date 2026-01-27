@@ -18,7 +18,6 @@ function duplicate_link($actions, $post)
 
         $actions['duplicate'] = '<a href="' . wp_nonce_url(admin_url('admin.php?action=duplicate_post&post=' . $post->ID), 'duplicate_post_' . $post->ID) . '">Duplicate</a>';
     }
-
     return $actions;
 }
 
