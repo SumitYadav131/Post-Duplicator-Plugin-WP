@@ -10,6 +10,7 @@ if (!defined('ABSPATH'))
 
 add_filter('post_row_actions', 'duplicate_link', 10, 2);
 
+// Add duplicate link for pages
 add_filter('page_row_actions', 'duplicate_link', 10, 2);
 
 
