@@ -8,11 +8,11 @@ Author: MyDevit-solutions
 if (!defined('ABSPATH'))
     exit;
 
+// Add duplicate link for the posts
 add_filter('post_row_actions', 'duplicate_link', 10, 2);
 
 // Add duplicate link for pages
 add_filter('page_row_actions', 'duplicate_link', 10, 2);
-
 
 // Add Duplicate link in the existing table row
 function duplicate_link($actions, $post)
